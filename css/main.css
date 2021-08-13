@@ -278,13 +278,12 @@ textarea {
 
 body, html {
   height: 100%;
-  width: 95vw;
-  margin: auto;
 }
 
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
+  width: 85vw;
+  margin: auto;
 }
 /******Grids*******/
 .container {
@@ -610,6 +609,10 @@ aside ul li a {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  
   .name {
       display: none;
   }

@@ -27,17 +27,25 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="home-page">
-  <div class="container"> 
+<body id="home-page" onload="loadLanguage()">
+  <div class="container en">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inEnglish()" id="eng" class="active">ENGLISH</a>
+            <a href="#" onclick="inArabic()" id="ara">العربية</a>
+        </div>
+    </header> 
     <nav>
         <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
         <a class="name" href="index.html">Swedish International University</a>
+        
         <ul class="nav-links" id="navLinks"> 
             <li class="nav-link"><a href="index.html">HOME</a></li>
-            <li class="nav-link"><a href="#">ABOUT US</a></li>
-            <li class="nav-link"><a href="#">PROGRAMMES</a></li>
-            <li class="nav-link"><a href="#">STUDY PLANS</a></li>
+            <li class="nav-link"><a href="about.html">ABOUT</a></li>
+            <li class="nav-link"><a href="programmes.html">PROGRAMMES</a></li>
+            <li class="nav-link"><a href="study-plans.html">STUDY PLANS</a></li>
         </ul>
+
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -46,16 +54,16 @@
     </nav>
 
     <main class="nested">
-        <section class="text-box nested">
-        <h1>Swedish International University</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Deleniti assumenda distinctio, obcaecati velit hic quos 
-            ad qui inventore maxime eius suscipit. Recusandae dolorem 
-            ullam quos corporis atque vero sint laboriosam!</p>
-        <a href="about.html" class="about-btn btn">Read more about us</a>
+        <section class="text-box">
+            <h1>Swedish International University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti assumenda distinctio, obcaecati velit hic quos 
+                ad qui invenstore maxime eius suscipit. Recusandae dolorem 
+                ullam quos corporis atque vero sint laboriosam!</p>
+            <a href="about.html" class="about-btn btn">Read more about us</a>
         </section>
 
-      <section id="programmes" class="nested">
+      <section id="programmes">
           <h2>Programmes</h2>
           <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
               vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
@@ -63,7 +71,7 @@
           <a href="programmes.html" class="programmes-btn btn">Read more</a>
       </section>
   
-      <section id="study-plans" class="nested">
+      <section id="study-plans">
           <h2>Study plans</h2>
           <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
               vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
@@ -73,8 +81,8 @@
     </main>
 
     <footer>
-        <h2>Contact</h2>
         <ul class="contacts">
+            <li><h2>Contact</h2></li>
             <li>Name</li>
             <li>Adress</li>
             <li>E-mail</li>
@@ -83,9 +91,75 @@
     </footer>
 
 </div>
+
+<div class="container ar" lang="ar" dir="rtl">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inArabic()" id="ara" class="langLink active">العربية</a>
+            <a href="#" onclick="inEnglish()" id="eng" class="langLink">ENGLISH</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+        <a class="name" href="index.html">الجامعة السويدية الدولية</a>
+
+        <ul class="nav-links" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">الرئيسية</a></li>
+            <li class="nav-link"><a href="about.html">من نحن</a></li>
+            <li class="nav-link"><a href="programmes.html">البرامج</a></li>
+            <li class="nav-link"><a href="study-plans.html">الدراسة</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <section class="text-box">
+            <h1>الجامعة السويدية الدولية</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti assumenda distinctio, obcaecati velit hic quos 
+                ad qui invenfilarabiyyyyyyyastore maxime eius suscipit. Recusandae dolorem 
+                ullam quos corporis atque vero sint laboriosam!</p>
+            <a href="about.html" class="about-btn btn">اقرأ المزيد عنا</a>
+        </section>
+
+      <section id="programmes">
+          <h2>البرامج</h2>
+          <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
+              vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
+              laboriosam dolores cupiditate facilis aliquam corrupti incidunt a unde tempora optio?</p>
+          <a href="programmes.html" class="programmes-btn btn">قراءة المزيد</a>
+      </section>
+  
+      <section id="study-plans">
+          <h2>الدراسة</h2>
+          <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
+              vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
+              laboriosam dolores cupiditate facilis aliquam corrupti incidunt a unde tempora optio?</p>
+          <a href="study-plans.html" class="studyplans-btn btn">قراءة المزيد</a>
+      </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>اتصال</h2></li>
+            <li>اسم</li>
+            <li>العنوان</li>
+            <li>بريد إلكتروني</li>
+            <li>رقم التليفون</li>
+        </ul>
+    </footer>
+</div>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
 
 </html>
+
+

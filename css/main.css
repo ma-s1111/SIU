@@ -261,6 +261,15 @@ textarea {
   }
 }
 
+/*************Boilerplate ends here*************/
+
+/*************Structure***************/
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
 :root {
   --blue: #006099;
   --lightblue: #54839e;
@@ -275,26 +284,56 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-
+/******Grids*******/
 .container {
   display: grid;
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: 95vw;
+  margin: auto;
   text-align: center;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .nested {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(autofit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
-
-nav {
+/*****Language switch********/
+header {
   grid-column: 1 / end;
   grid-row: 1 / 2;
+  background: var(--blue);
+}
+
+.langWrap {
+  padding: 5px 0;
+}
+
+.langWrap a {
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: 800;
+  background: gray;
+}
+
+.langWrap a.active {
+  background-color: var(--lightblue);
+  font-size: 20px;
+}
+
+.langWrap .a:hover {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/**********Navbar*********/
+nav {
+  grid-column: 1 / end;
+  grid-row: 2 / 3;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -302,7 +341,7 @@ nav {
 
 nav img {
   width: 70px;
-  margin: 4px;
+  margin: 5px;
 }
 
 .name {
@@ -310,15 +349,17 @@ nav img {
   font-weight: 600;
   text-decoration: none;
   font-size: 10.5px;
-  padding: 1%;
 }
 
 .nav-links {
-  flex: 1;
   text-align: right;
   display: inline-block;
-  width: 70%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.ar .nav-links {
+  text-align: left;
 }
 
 .nav-links li {
@@ -328,7 +369,7 @@ nav img {
   position: relative;
 }
 
-.nav-links li a  {
+.nav-links li a {
   color: var(--blue);
   text-decoration: none;
   font-size: 12.5px;
@@ -363,31 +404,33 @@ nav img {
 
 main {
   grid-column: 1 / end;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 footer {
   grid-column: 1 / end;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   background: var(--blue);
   text-align: left;
-  padding: 20px;
-  color: #fff;
+}
+
+.contacts {
+  padding: 10px 15px;
+}
+
+.ar footer {
+  text-align: right;
 }
 
 .contacts li {
   list-style: none;
 }
 
-/***Home***/
-#home-page main {
-  color: #fff;
-}
-
+/*************Home***************/
 .text-box {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
-  padding: 100px;
+  padding: 200px 50px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url('../img/home-background.jpg');
   background-position: center;
   background-size: cover;
@@ -405,31 +448,37 @@ footer {
 .btn {
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid;
   margin-top: 10px;
   padding: 12px 34px;
   font-size: 15px;
   background: rgba(0, 0, 0, 0.1);
   position: relative;
   cursor: pointer;
-  color: #fff;
-  width: 10rem;
+  width: 15rem;
   margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transition: 1.5s;
 }
 
 .about-btn:hover {
   border: 1px solid var(--yellow);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7 );
   background: var(--yellow);
-  transition: 1s;
+  box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+#programmes, #study-plans {
+  font-size: 12px;
+  background-color: var(--lightblue);  
+  padding: 100px 25px;
 }
 
 #programmes {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  font-size: 12px;
-  background-color: var(--lightblue);  
-  padding: 50px;
   /*background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url('../images/programmes.jpg');
   background-position: center;
   background-size: cover;*/
@@ -438,9 +487,7 @@ footer {
 #study-plans {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  font-size: 12px;
-  background-color: var(--lightblue);  
-  padding: 50px;
+  color: green;
   /*background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url('../images/programmes.jpg');
   background-position: center;
   background-size: cover;*/
@@ -448,34 +495,119 @@ footer {
 
 .programmes-btn:hover, .studyplans-btn:hover{
   border: 1px solid var(--blue);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7 );
   background-color: var(--blue);
+}
+
+/*********About****************/
+.about-box {
+  padding: 100px 50px;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('/img/programmes.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.about-box h1 {
+  font-size: 16px;
+}
+
+.about-box h1, .about-box h2, .about-box p {
   color: #fff;
-  transition: 1s;
+  text-shadow: 4px 1px 3px rgba(102, 105, 105, 0.82);
+}
+
+.box h2, .box p {
+  color: var(--blue);
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+  grid-row: 2 / 3;
+  padding: 75px 25px;
+  box-shadow: 5px 5px 10px 0px rgba(122, 62, 62, 0.1);
+  border-radius: 5px;
+}
+
+.box h2:nth-child(1) {
+  font-size: 16px;
+}
+
+.ar .box {
+  text-align: right;
+}
+
+/*******Programmes**********/
+aside {
+  grid-column: 1 / 2;
+  background-color: var(--blue);
+  padding: 30px 0;
+}
+
+aside h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+aside h2 a {
+  text-decoration: none;
+}
+
+aside ul li {
+  padding: 15px;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+  border-top: 1px solid rgba(225, 225, 225, 0.5);
+  list-style: none;
+}
+
+aside ul li:hover {
+  background-color: var(--lightblue);
+  transition: 0.5s;
+}
+
+aside ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+
+.programmes {
+  grid-column: 2 / 3;
+  text-align: left;
+}
+
+.ar .programmes {
+  text-align: right;
+}
+
+.programme {
+  border-left: 10px solid var(--lightblue);
+  padding: 30px;
+  color: var(--blue);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);;
+}
+
+.ar .programme {
+  border-left: none;
+  border-right: 10px solid var(--lightblue);
+}
+
+.programme p, .programme h2 {
+  color: var(--blue);
+}
+
+#programmes-page .btn {
+  background-color: var(--lightblue);
+}
+
+#programmes-page .btn:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-      overflow-x: hidden;
-  }
-
   .name {
       display: none;
-  }
-
-  .nav-links {
-      position: absolute;
-      background-color: #fff;
-      right: 0px;
-      height: 100vh;
-      width: 60%;
-      z-index: 2;
-      top: 6vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: translateX(100%);
-      transition: transform 0.8s ease-in;
   }
 
   #programmes {
@@ -488,28 +620,65 @@ footer {
     grid-row: 3 / 4;
   }
 
+  .box {
+    box-shadow: none;
+  }
+
+  .mission-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .goals-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #fff;
+    height: 100vh;
+    z-index: 2;
+    top: 5.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    left: -100%;
+    transition: all 0.5s ease-in;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+
   .nav-links li {
       opacity: 0;
   }
 
   .burger {
-      display: block;
-      margin-right: 10px;
-      cursor: pointer;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
   }
 
   .nav-active {
-      transform: translateX(0%);
+      left: 0;
+  }
+
+  .ar .nav-links {
+    left: 0;
+  }
+
+  .ar .nav-active {
+    left: -100%;
   }
 
   @keyframes navLinkFade {
       from{
           opacity: 0;
-          transform: translateX(50px);
+          transform: translateX(0px);
       }
       to{
           opacity: 1;
-          transform: translateX(0px);
+          transform: translateX(-40px);
       }
   }
 
@@ -523,5 +692,15 @@ footer {
 
   .toggle .line3 {
       transform: rotate(45deg) translate(-6px, -5px);
+  }
+
+  aside {
+    grid-column: 1 / end;
+    grid-row: 1 / 2;
+  }
+
+  .programmes {
+    grid-column: 1 / end;
+    grid-row: 2 / 3;
   }
 }

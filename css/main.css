@@ -278,6 +278,8 @@ textarea {
 
 body, html {
   height: 100%;
+  width: 95vw;
+  margin: auto;
 }
 
 body {
@@ -288,7 +290,7 @@ body {
 .container {
   display: grid;
   height: auto;
-  width: 95vw;
+  min-width: fit-content;
   margin: auto;
   text-align: center;
   grid-gap: 10px;
@@ -298,6 +300,7 @@ body {
 .nested {
   display: grid;
   grid-gap: 10px;
+  min-width: fit-content;
   grid-template-columns: repeat(autofit, minmax(50px, 1fr));
 }
 /*****Language switch********/
@@ -447,7 +450,7 @@ footer {
   background: rgba(0, 0, 0, 0.1);
   position: relative;
   cursor: pointer;
-  width: 15rem;
+  width: fit-content;
   margin: auto;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }

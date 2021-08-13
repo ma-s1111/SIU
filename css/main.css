@@ -292,13 +292,13 @@ body {
   margin: auto;
   text-align: center;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
 }
 
 .nested {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(autofit, minmax(50px, 1fr));
 }
 /*****Language switch********/
 header {
@@ -504,6 +504,8 @@ footer {
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('/img/programmes.jpg');
   background-position: center;
   background-size: cover;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .about-box h1 {
@@ -527,6 +529,11 @@ footer {
   padding: 75px 25px;
   box-shadow: 5px 5px 10px 0px rgba(122, 62, 62, 0.1);
   border-radius: 5px;
+}
+
+.message-box {
+  background-color: #fff;
+  box-shadow: none;
 }
 
 .box h2:nth-child(1) {
@@ -624,14 +631,19 @@ aside ul li a {
     box-shadow: none;
   }
 
-  .mission-box {
+  .about-box {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .goals-box {
+  .mission-box {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+  }
+
+  .goals-box {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 
   .nav-links {

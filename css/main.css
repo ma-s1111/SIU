@@ -314,18 +314,10 @@ header {
 .langWrap a {
   text-decoration: none;
   padding: 0 15px;
-  font-weight: 800;
-  background: gray;
 }
 
 .langWrap a.active {
   background-color: var(--lightblue);
-  font-size: 20px;
-}
-
-.langWrap .a:hover {
-  font-size: 16px;
-  transition: 0.3s;
 }
 
 /**********Navbar*********/
@@ -501,9 +493,7 @@ footer {
 /*********About****************/
 .about-box {
   padding: 100px 50px;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('/img/programmes.jpg');
-  background-position: center;
-  background-size: cover;
+  background-color: rgba(29, 27, 61, 0.5);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -576,6 +566,10 @@ aside ul li a {
   display: block;
   text-decoration: none;
   text-align: left;
+}
+
+.ar aside ul li a {
+  text-align: right;
 }
 
 .programmes {

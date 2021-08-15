@@ -302,6 +302,10 @@ body {
   min-width: fit-content;
   grid-template-columns: repeat(autofit, minmax(50px, 1fr));
 }
+
+.ar {
+  display: none;
+}
 /*****Language switch********/
 header {
   grid-column: 1 / end;
@@ -334,7 +338,7 @@ nav {
 }
 
 nav img {
-  width: 70px;
+  width: 120px;
   margin: 5px;
 }
 
@@ -366,7 +370,7 @@ nav img {
 .nav-links li a {
   color: var(--blue);
   text-decoration: none;
-  font-size: 12.5px;
+  font-size: 16px;
   text-shadow: 0.3px 0.3px var(--lightblue);
 }
 
@@ -431,7 +435,7 @@ footer {
 }
 
 .text-box h1 {
-  font-size: 1.5rem;
+  font-size: 40px;
 }
 
 .text-box p {
@@ -500,11 +504,7 @@ footer {
   grid-row: 1 / 2;
 }
 
-.about-box h1 {
-  font-size: 16px;
-}
-
-.about-box h1, .about-box h2, .about-box p {
+.about-box h2, .about-box p {
   color: #fff;
   text-shadow: 4px 1px 3px rgba(102, 105, 105, 0.82);
 }
@@ -526,10 +526,6 @@ footer {
 .message-box {
   background-color: #fff;
   box-shadow: none;
-}
-
-.box h2:nth-child(1) {
-  font-size: 16px;
 }
 
 .ar .box {

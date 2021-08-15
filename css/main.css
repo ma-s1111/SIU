@@ -338,15 +338,8 @@ nav {
 }
 
 nav img {
-  width: 120px;
+  width: 125px;
   margin: 5px;
-}
-
-.name {
-  color: var(--blue);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 10.5px;
 }
 
 .nav-links {
@@ -363,14 +356,14 @@ nav img {
 .nav-links li {
   list-style: none;
   display: inline-block;
-  padding: 1% 4%;
+  padding: 1%;
   position: relative;
 }
 
 .nav-links li a {
   color: var(--blue);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15.5px;
   text-shadow: 0.3px 0.3px var(--lightblue);
 }
 
@@ -393,8 +386,8 @@ nav img {
 }
 
 .burger div {
-  width: 25px;
-  height: 2px;
+  width: 30px;
+  height: 3px;
   background-color: var(--blue);
   margin: 6px;
   transition: all 0.3s ease;
@@ -477,18 +470,11 @@ footer {
 #programmes {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  /*background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url('../images/programmes.jpg');
-  background-position: center;
-  background-size: cover;*/
 }
 
 #study-plans {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  color: green;
-  /*background-image: linear-gradient(rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url('../images/programmes.jpg');
-  background-position: center;
-  background-size: cover;*/
 }
 
 .programmes-btn:hover, .studyplans-btn:hover{
@@ -499,7 +485,7 @@ footer {
 /*********About****************/
 .about-box {
   padding: 100px 50px;
-  background-color: rgba(29, 27, 61, 0.5);
+  background-color: var(--lightblue);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -604,13 +590,65 @@ aside ul li a {
   border: 1px solid var(--blue);
 }
 
+/*****Faculties******/
+aside ul li {
+  text-align: left;
+}
+
+.ar aside ul li {
+  text-align: right;
+}
+
+#administration-economics, #administration-economicsAR {
+  display: block;
+}
+
+.ar .department {
+  text-align: right;
+}
+
+.ar .department2 {
+  border-left: none;
+  border-right: 10px solid var(--lightblue);
+}
+
+.departments {
+  grid-column: 2 / end;
+  padding: 10px;
+}
+
+.department {
+  display: none;
+  width: 100%;
+  text-align: left;
+}
+
+.department2 {
+  border-left: 10px solid var(--lightblue);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.department h3, .department p {
+  color: var(--blue);
+}
+
+.department2 h3 {
+  padding: 30px;
+  color: var(--blue);
+}
+
+.department2 p {
+  padding: 30px;
+}
+
+.active {
+  background-color: var(--lightblue);
+}
+
+
 @media only screen and (max-width: 768px) {
   body {
     width: 100%;
-  }
-  
-  .name {
-      display: none;
   }
 
   #programmes {
@@ -640,6 +678,10 @@ aside ul li a {
   .goals-box {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+  }
+
+  nav img {
+    width: 100px;
   }
 
   .nav-links {
@@ -707,7 +749,7 @@ aside ul li a {
     grid-row: 1 / 2;
   }
 
-  .programmes {
+  .programmes, .departments {
     grid-column: 1 / end;
     grid-row: 2 / 3;
   }

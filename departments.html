@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swedish International University</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="icon" type="image" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body id="departments-page" onload="loadLanguage()">
+  <div class="container en">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inEnglish()" class="active">ENGLISH</a>
+            <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+        
+        <ul class="nav-links" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">HOME</a></li>
+            <li class="nav-link"><a href="about.html">ABOUT</a></li>
+            <li class="nav-link"><a href="programmes.html">PROGRAMMES</a></li>
+            <li class="nav-link"><a href="departments.html">FACULTIES AND DEPARTMENTS</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <aside id="faculties">
+            <h2>FACULTIES</h2>
+            <ul>
+                <li onclick="showDepartments('administration-economics')" class="faculty active">Faculty of Administration and Economics</li>
+                <li onclick="showDepartments('law-politics')" class="faculty">College of Law and Politics</li>
+                <li onclick="showDepartments('engineering-computer-technology')" class="faculty">College of Engineering and Computer Technology</li>
+                <li onclick="showDepartments('literature-education')" class="faculty">College of Literature and Education</li>
+                <li onclick="showDepartments('media-communication')" class="faculty">College of Media and Communication</li>
+                <li onclick="showDepartments('medical-sciences')" class="faculty">Faculty of Allied Medical Sciences</li>
+                <li onclick="showDepartments('arts-languages')" class="faculty">Faculty of Arts and Languages</li>
+                <li onclick="showDepartments('graduate-studies-research')" class="faculty">College of Graduate Studies and Scientific Research</li>
+            </ul>
+        </aside>
+
+        <section class="departments nested">
+            <section id="administration-economics" class="department nested">
+                <section class="department2">
+                    <h3>Project Management</h3>
+                </section>
+                <section class="department2">
+                    <h3>Environment Management</h3>
+                </section>
+                <section class="department2">
+                    <h3>Industrial Management Department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Accounting</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Economics and Financial and Banking Management</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Business Administration</h3>
+                </section>
+            </section>
+
+            <section id="law-politics" class="department">
+                <section class="department2">
+                    <h3>Law department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Political Science</h3>
+                </section>
+            </section>
+
+            <section id="engineering-computer-technology" class="department">
+                <section class="department2">
+                    <h3>Computer Engineering Department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Electrical Engineering</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Medical Devices and Equipments Engineering</h3>
+                </section>
+            </section>
+
+            <section id="literature-education" class="department">
+                <section class="department2">
+                    <h3>Department of Arabic Language and Literature</h3>
+                </section>
+                <section class="department2">
+                    <h3>English department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Psychological and Educational Sciences</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Service and Social</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Arts and Critical Studies</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Philosophy</h3>
+                </section>
+            </section>
+
+            <section id="media-communication" class="department">
+                <section class="department2">
+                    <h3>Press and Communication Department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Department of Public Relations and Advertising</h3>
+                </section>
+            </section>
+
+            <section id="medical-sciences" class="department">
+                <section class="department2">
+                    <h3>Public Health department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Therapeutic Nutrition department</h3>
+                </section>
+            </section>
+
+            <section id="arts-languages" class="department">
+                <section class="department2">
+                    <h3>Department of Arabic Language</h3>
+
+                </section>
+                <section class="department2">
+                    <h3>English department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Swedish Language department</h3>
+                </section>
+            </section>
+
+            <section id="graduate-studies-research" class="department">
+                <section class="department2">
+                    <p>There is the possibility of opening new departments after signing agreements with faculty members.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>Contact</h2></li>
+            <li>Name</li>
+            <li>Adress</li>
+            <li>E-mail</li>
+            <li>Phone number</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+        </ul>
+    </footer>
+
+</div>
+
+<div class="container ar" lang="ar" dir="rtl">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inArabic()" id="ara" class="active">العربية</a>
+            <a href="#" onclick="inEnglish()" id="eng">ENGLISH</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+
+        <ul class="nav-links" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">الرئيسية</a></li>
+            <li class="nav-link"><a href="about.html">من نحن</a></li>
+            <li class="nav-link"><a href="programmes.html">البرامج</a></li>
+            <li class="nav-link"><a href="departments.html">الكليات والاقسام </a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <aside id="faculties">
+            <h2>الكليات</h2>
+            <ul>
+                <li onclick="showDepartments('administration-economicsAR')" class="faculty">كلية الإدارة و الإقتصاد</li>
+                <li onclick="showDepartments('law-politicsAR')" class="faculty">كلية القانون والسياسة</li>
+                <li onclick="showDepartments('engineering-computer-technologyAR')" class="faculty">الكلية التقنية الهندسية والحاسوب</li>
+                <li onclick="showDepartments('literature-educationAR')" class="faculty">كلية الأدب والتربية</li>
+                <li onclick="showDepartments('media-communicationAR')" class="faculty">كلية الإعلام و الإتصال</li>
+                <li onclick="showDepartments('medical-sciencesAR')" class="faculty">كلية العلوم الطبية المساعدة</li>
+                <li onclick="showDepartments('arts-languagesAR')" class="faculty">كلية الاداب لغات </li>
+                <li onclick="showDepartments('graduate-studies-researchAR')" class="faculty">كلية الدراسات العليا والبحث العلمي</li>
+            </ul>
+        </aside>
+
+        <section class="departments nested">
+            <section id="administration-economicsAR" class="department nested">
+                <section class="department2">
+                    <h3>إدارة المشاريع</h3>
+                </section>
+                <section class="department2">
+                    <h3>إدارة البيئة</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم الإدارة الصناعية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم المحاسبة</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم الإقتصاد والإدارة المالية والمصرفية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم إدارة الأعمال</h3>
+                </section>
+            </section>
+
+            <section id="law-politicsAR" class="department">
+                <section class="department2">
+                    <h3>قسم القانون</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم العلوم السياسية</h3>
+                </section>
+            </section>
+
+            <section id="engineering-computer-technologyAR" class="department">
+                <section class="department2">
+                    <h3>قسم هندسة الحاسوب</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم هندسة الكهرباء </h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم هندسة الاجهزة والمعدات الطبية </h3>
+                </section>
+            </section>
+
+            <section id="literature-educationAR" class="department">
+                <section class="department2">
+                    <h3>قسم اللغة العربية وآدابها</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم اللغة الإنجليزية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم العلوم النفسية والتربوية </h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم الخدمة والأجتماعية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم الفنون والدراسات النقدية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم الفلسفة</h3>
+                </section>
+            </section>
+
+            <section id="media-communicationAR" class="department">
+                <section class="department2">
+                    <h3>قسم الصحافة والإتصال</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم العلاقات العامة والإعلان</h3>
+                </section>
+            </section>
+
+            <section id="medical-sciencesAR" class="department">
+                <section class="department2">
+                    <h3>قسم الصحه العامه</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم التغذيه العلاجيه</h3>
+                </section>
+            </section>
+
+            <section id="arts-languagesAR" class="department">
+                <section class="department2">
+                    <h3>قسم اللغة العربية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم اللغة الإنجليزية</h3>
+                </section>
+                <section class="department2">
+                    <h3>قسم اللغة السويدية</h3>
+                </section>
+            </section>
+
+            <section id="graduate-studies-researchAR" class="department">
+                <section class="department2">
+                    <p>هناك  امكانية فتح اقسام جديدة بعد توقيع اتفقيات مع اعضاء هيئات التدريس. </p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>اتصال</h2></li>
+            <li>اسم</li>
+            <li>العنوان</li>
+            <li>بريد إلكتروني</li>
+            <li>رقم التليفون</li>
+            <li>مصرف</li>
+            <li>مصرف</li>
+            <li>مصرف</li>
+            <li>مصرف</li>
+        </ul>
+    </footer>
+</div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+

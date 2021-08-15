@@ -54,3 +54,29 @@ function inEnglish() {
 
     localStorage.setItem('selectedLang', 'english');
 }
+
+function showDepartments(id) {
+    const allDepartments = document.querySelectorAll(".department");
+    const selectedDepartments = document.getElementById(id);
+
+
+    for (let i = 0; i < allDepartments.length; i++) {
+        
+        if(allDepartments[i] != selectedDepartments) {
+            allDepartments[i].style.display = "none";
+        }
+
+        if(allDepartments[i] == selectedDepartments) {
+            allDepartments[i].style.display = "block";
+        }
+    }
+}
+
+const faculties = document.querySelectorAll('.faculty');
+        
+faculties.forEach(faculty => {
+    faculty.addEventListener('click', function() {
+        faculties.forEach(faculty => faculty.classList.remove('active'));
+        this.classList.add('active');
+    });
+});

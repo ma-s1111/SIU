@@ -33,6 +33,7 @@
         <div class="langWrap">
             <a href="#" onclick="inEnglish()" class="active">ENGLISH</a>
             <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
         </div>
     </header> 
     <nav>
@@ -98,6 +99,7 @@
 <div class="container ar" lang="ar" dir="rtl">
     <header>
         <div class="langWrap">
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
             <a href="#" onclick="inArabic()" id="ara" class="active">العربية</a>
             <a href="#" onclick="inEnglish()" id="eng">ENGLISH</a>
         </div>
@@ -105,14 +107,14 @@
     <nav>
         <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
 
-        <ul class="nav-links" id="navLinks"> 
+        <ul class="nav-links2" id="navLinks"> 
             <li class="nav-link"><a href="index.html">الرئيسية</a></li>
             <li class="nav-link"><a href="about.html">من نحن</a></li>
             <li class="nav-link"><a href="programmes.html">البرامج</a></li>
             <li class="nav-link"><a href="departments.html">الكليات والاقسام </a></li>
         </ul>
 
-        <div class="burger">
+        <div class="burger2">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -161,11 +163,78 @@
     </footer>
 </div>
 
+<div class="container sv" lang="sv">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inEnglish()">ENGLISH</a>
+            <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" lang="sv" class="active">SVENSKA</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+        
+        <ul class="nav-links3" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">HEM</a></li>
+            <li class="nav-link"><a href="about.html">OM</a></li>
+            <li class="nav-link"><a href="programmes.html">PROGRAM</a></li>
+            <li class="nav-link"><a href="departments.html">FAKULTETER OCH AVDELNINGAR</a></li>
+        </ul>
+
+        <div class="burger3">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <section class="text-box">
+            <h1>Swedish International University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deleniti assumenda distinctio, obcaecati velit hic quos 
+                ad qui invenstore maxime eius suscipit. Recusandae dolorem 
+                ullam quos corporis atque vero sint laboriosam!</p>
+            <a href="about.html" class="about-btn btn">Läs mer om oss</a>
+        </section>
+
+      <section id="programmes">
+          <h2>Program</h2>
+          <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
+              vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
+              laboriosam dolores cupiditate facilis aliquam corrupti incidunt a unde tempora optio?</p>
+          <a href="programmes.html" class="programmes-btn btn">Läs mer</a>
+      </section>
+  
+      <section id="study-plans">
+          <h2>Studier och examination</h2>
+          <p>We offer XXX programmes.... Lorem ipsum dolor sit amet consectetur molestias asperiores 
+              vitae alias debitis. Minima labore molestiae eos iusto, fugiat, ad veniam omnis
+              laboriosam dolores cupiditate facilis aliquam corrupti incidunt a unde tempora optio?</p>
+          <a href="study-plans.html" class="studyplans-btn btn">Läs mer</a>
+      </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>Kontakt</h2></li>
+            <li>Namn</li>
+            <li>Address</li>
+            <li>E-mail</li>
+            <li>Telefonnummer</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+        </ul>
+    </footer>
+
+</div>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
 
 

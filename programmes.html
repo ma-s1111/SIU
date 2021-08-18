@@ -31,8 +31,9 @@
   <div class="container en"> 
     <header>
         <div class="langWrap">
-            <a href="#" onclick="inEnglish()" id="eng" class="active">ENGLISH</a>
-            <a href="#" onclick="inArabic()" id="ara" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inEnglish()" class="active">ENGLISH</a>
+            <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
         </div>
     </header> 
     <nav>
@@ -53,38 +54,68 @@
 
     <main class="nested">
         <aside>
-            <h2><a href="programmes.html">Programmes</a></h2>
+            <h2>Programmes</h2>
             <ul>
-                <li><a href="#">Preliminary studies</a></li>
-                <li><a href="#">Bachelor's studies</a></li>
-                <li><a href="#">Postgraduate studies</a></li>
-                <li><a href="#">Master's studies</a></li>
-                <li><a href="#">PhD studies</a></li>
-                <li><a href="#">Professional studies</a></li>
+                <li onclick="showProgramme('preliminary-studiesEN')" class="active programmeItem">Preliminary studies</li>
+                <li onclick="showProgramme('bachelors-studiesEN')" class="programmeItem">Bachelor's studies</li>
+                <li onclick="showProgramme('postgraduate-studiesEN')" class="programmeItem">Postgraduate studies</li>
+                <li onclick="showProgramme('masters-studiesEN')" class="programmeItem">Master's studies</li>
+                <li onclick="showProgramme('phd-studiesEN')" class="programmeItem">PhD studies</li>
+                <li onclick="showProgramme('professional-studiesEN')" class="programmeItem">Professional studies</li>
         </aside>
 
         <section class="programmes nested">
-            <section class="programme">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+            <section class="programme" id="preliminary-studiesEN">
+                <h2>Preliminary studies</h2>
+                <p>To join university education, the general and special admission requirements for the specialization that the student wishes to join must be met. The Academy gives students the opportunity to study to study some subjects and grants them a qualifying diploma for university admission.</p>
                 <a href="programme-info.html" class="btn" target="_blank">Read more</a>
             </section>
 
-            <section class="programme">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+            <section class="programme" id="bachelors-studiesEN">
+                <h2>Bachelor's studies</h2>
+                <p>The Swedish International University provides a wide range of academic, social and professional opportunities, during which the student studies a specific subject to obtain a bachelor's degree awarded by the university after completing the prescribed period of study in accordance with the 
+                    criteria and conditions for admission specified by the Swedish Ministry of Higher Education and Scientific Research. At the end of the bachelor's study, the student can combine theoretical study with practical practice. This degree provides the student with the skills and knowledge necessary to obtain a specific job or complete postgraduate studies.<br><br>
+                    The university grants degrees in a number of disciplines, including educational and psychological sciences, sociology, philosophy, law and politics, media, social service, special education, public health and therapeutic nutrition. <strong style="color: steelblue;">Under construction.</strong><br><br>
+                    Duration of study: Bachelor's degree 3 years.
+                </p>
                 <a href="#" class="btn">Read more</a>
             </section>
 
-            <section class="programme">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+            <section class="programme" id="postgraduate-studiesEN">
+                <h2>Postgraduate studies</h2>
+                <p>The university offers different programs for obtaining a master's and doctorate degree, including courses and a final thesis at a high level and a high degree, the thesis in most cases takes more than half of the workload.<br><br>
+                    Distinguished graduate students who demonstrate their abilities in creative and innovative work are accepted, and the student is required to be academically qualified for scientific research and the upcoming specialization. The competition for admission is in light of the general average obtained in the Bachelor’s and Master’s degrees. Acceptance in some 
+                    departments requires success in an admission exam and an individual interview. The graduate student receives individual supervision and prepares a thesis that is publicly discussed. Some departments may require that the thesis be part of an ongoing project within the department. Researchers often work as part of an integrated team in the fields of technology, natural sciences and education.
+                    </p>
                 <a href="#" class="btn">Read more</a>
             </section>
 
-            <section class="programme">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+            <section class="programme" id="masters-studiesEN">
+                <h2>Master's studies</h2>
+                <p>The master's program has been prepared to meet the needs of students who seek to enhance their skills and expand their knowledge in diverse and modern scientific fields that are compatible with the needs of the labor market locally, regionally and internationally. Where integrated programs have been prepared aiming to apply the knowledge gained from the theoretical and 
+                    empirical perspectives in order to graduate people capable of working in many environments.<br><br>
+                    Duration of study: one year / two semesters: one academic year, during which the thesis is also written.<br><br>
+                    Language of study: Arabic and English (according to branch and specialization)
+                    </p>
+                <a href="#" class="btn">Read more</a>
+            </section>
+
+            <section class="programme" id="phd-studiesEN">
+                <h2>PhD studies</h2>
+                <p>This study is the highest university degree granted by the university, and it qualifies the student and helps him to make his own theories resulting from his practical experience and previous academic studies. The applicant for a doctoral study is required to fulfill the minimum requirements and to have an acceptable academic qualification with a grade appropriate to the required level. The duration of the thesis is 3 years.<br><br>
+                    Previous studies: Master's degree.<br><br>
+                    Language of study: Arabic, English and Swedish (depending on branch and specialty)
+                    </p>
+                <a href="#" class="btn">Read more</a>
+            </section>
+
+            <section class="programme" id="professional-studiesEN">
+                <h2>Professional studies</h2>
+                <p>Vocational education is of a very practical nature, and gives the student the necessary skills during working life. It is intended for those young people who have completed their basic education, so they can join work or enroll in higher education after completing their vocational education. The university has prepared various programs in various fields that meet the needs of the labor market in various sectors, whether educational, 
+                    health, administrative and so on. Which qualifies applicants to assume the tasks of the job and the ability to adapt within the work environment with the constant desire to learn and develop their personal and practical skills for the advancement of the organization or company in which they work. One of the Academy's priorities is to prepare its students for practical life and train them to be experts and specialists, each in their field.<br><br>
+                    We also seek to provide opportunities for our students to travel to Sweden for the purpose of student exchange, exchange of practical experiences and actual training in Swedish institutions and under the supervision of a group of professors and experts to transfer their practical experiences to students and teach them in all possible ways.<br><br>
+                    The university grants a professional diploma in some professional disciplines that suit the needs of the international community in general, and some professional disciplines that meet needs in the Arab countries.
+                    </p>
                 <a href="#" class="btn">Read more</a>
             </section>
         </section>
@@ -97,6 +128,10 @@
             <li>Adress</li>
             <li>E-mail</li>
             <li>Phone number</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
         </ul>
     </footer>
 </div>
@@ -104,21 +139,22 @@
 <div class="container ar" lang="ar" dir="rtl">
     <header>
         <div class="langWrap">
-            <a href="#" onclick="inArabic()" class="active">العربية</a>
-            <a href="#" onclick="inEnglish()">ENGLISH</a>
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
+            <a href="#" onclick="inArabic()" id="ara" class="active">العربية</a>
+            <a href="#" onclick="inEnglish()" id="eng">ENGLISH</a>
         </div>
     </header> 
     <nav>
         <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
 
-        <ul class="nav-links" id="navLinks"> 
+        <ul class="nav-links2" id="navLinks"> 
             <li class="nav-link"><a href="index.html">الرئيسية</a></li>
             <li class="nav-link"><a href="about.html">من نحن</a></li>
             <li class="nav-link"><a href="programmes.html">البرامج</a></li>
             <li class="nav-link"><a href="departments.html">الكليات والاقسام </a></li>
         </ul>
 
-        <div class="burger">
+        <div class="burger2">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -178,7 +214,84 @@
             <li>مصرف</li>
         </ul>
     </footer>
+</div>
 
+<div class="container sv"> 
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inEnglish()">ENGLISH</a>
+            <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" lang="sv" class="active">SVENSKA</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+        
+        <ul class="nav-links3" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">HEM</a></li>
+            <li class="nav-link"><a href="about.html">OM</a></li>
+            <li class="nav-link"><a href="programmes.html">PROGRAM</a></li>
+            <li class="nav-link"><a href="departments.html">FAKULTETER OCH AVDELNINGAR</a></li>
+        </ul>
+        <div class="burger3">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <aside>
+            <h2><a href="programmes.html">Program</a></h2>
+            <ul>
+                <li><a href="#">Preliminära studier</a></li>
+                <li><a href="#">Grundutbildning?</a></li>
+                <li><a href="#"><strong>POSTGRADUATE????</strong></a></li>
+                <li><a href="#">Masterstudier</a></li>
+                <li><a href="#">Doktorandstudier</a></li>
+                <li><a href="#">Yrkesstudier?</a></li>
+        </aside>
+
+        <section class="programmes nested">
+            <section class="programme">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+                <a href="programme-info.html" class="btn" target="_blank">Läs mer</a>
+            </section>
+
+            <section class="programme">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+                <a href="programme-info.html" class="btn" target="_blank">Läs mer</a>
+            </section>
+
+            <section class="programme">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+                <a href="programme-info.html" class="btn" target="_blank">Läs mer</a>
+            </section>
+
+            <section class="programme">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro fuga ipsam dolorem soluta, beatae dolores fugiat et ab vero qui sit expedita perspiciatis quae cupiditate iusto voluptatum cum blanditiis doloribus provident, tenetur maiores magnam excepturi omnis! Rerum inventore eos nobis atque incidunt quaerat distinctio quo deserunt, tempore, quae excepturi.</p>
+                <a href="programme-info.html" class="btn" target="_blank">Läs mer</a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>Kontakt</h2></li>
+            <li>Namn</li>
+            <li>Address</li>
+            <li>E-mail</li>
+            <li>Telefonnummer</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+        </ul>
+    </footer>
 </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

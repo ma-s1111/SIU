@@ -33,6 +33,7 @@
         <div class="langWrap">
             <a href="#" onclick="inEnglish()" class="active">ENGLISH</a>
             <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
         </div>
     </header> 
     <nav>
@@ -189,6 +190,7 @@
 <div class="container ar" lang="ar" dir="rtl">
     <header>
         <div class="langWrap">
+            <a href="#" onclick="inSwedish()" dir="rtl" lang="sv">SVENSKA</a>
             <a href="#" onclick="inArabic()" id="ara" class="active">العربية</a>
             <a href="#" onclick="inEnglish()" id="eng">ENGLISH</a>
         </div>
@@ -196,14 +198,14 @@
     <nav>
         <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
 
-        <ul class="nav-links" id="navLinks"> 
+        <ul class="nav-links2" id="navLinks"> 
             <li class="nav-link"><a href="index.html">الرئيسية</a></li>
             <li class="nav-link"><a href="about.html">من نحن</a></li>
             <li class="nav-link"><a href="programmes.html">البرامج</a></li>
             <li class="nav-link"><a href="departments.html">الكليات والاقسام </a></li>
         </ul>
 
-        <div class="burger">
+        <div class="burger2">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -340,6 +342,163 @@
             <li>مصرف</li>
         </ul>
     </footer>
+</div>
+
+<div class="container sv">
+    <header>
+        <div class="langWrap">
+            <a href="#" onclick="inEnglish()">ENGLISH</a>
+            <a href="#" onclick="inArabic()" dir="rtl" lang="ar">العربية</a>
+            <a href="#" onclick="inSwedish()" lang="sv" class="active">SVENSKA</a>
+        </div>
+    </header> 
+    <nav>
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+        
+        <ul class="nav-links3" id="navLinks"> 
+            <li class="nav-link"><a href="index.html">HEM</a></li>
+            <li class="nav-link"><a href="about.html">OM</a></li>
+            <li class="nav-link"><a href="programmes.html">PROGRAM</a></li>
+            <li class="nav-link"><a href="departments.html">FAKULTETER OCH AVDELNINGAR</a></li>
+        </ul>
+
+        <div class="burger3">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="nested">
+        <aside id="faculties">
+            <h2>FAKULTETER</h2>
+            <ul>
+                <li onclick="showDepartments('administration-economicsSV')" class="faculty active">Fakulteten för administration och ekonomi</li>
+                <li onclick="showDepartments('law-politicsSV')" class="faculty">Juridiska och politiska högskolan</li>
+                <li onclick="showDepartments('engineering-computer-technologySV')" class="faculty">Högskolan för teknik och datorteknik</li>
+                <li onclick="showDepartments('literature-educationSV')" class="faculty">Högskolan för litteratur och utbildning</li>
+                <li onclick="showDepartments('media-communicationSV')" class="faculty">Högskolan för media och kommunikation</li>
+                <li onclick="showDepartments('medical-sciencesSV')" class="faculty">Fakulteten för allierade medicinska vetenskaper</li>
+                <li onclick="showDepartments('arts-languagesSV')" class="faculty">Fakulteten för konst och språk</li>
+                <li onclick="showDepartments('graduate-studies-researchSV')" class="faculty"><strong>"College of Graduate Studies and Scientific Research"?????</strong></li>
+            </ul>
+        </aside>
+
+        <section class="departments nested">
+            <section id="administration-economicsSV" class="department nested">
+                <section class="department2">
+                    <h3>Projektledning</h3>
+                </section>
+                <section class="department2">
+                    <h3>Miljöledning</h3>
+                </section>
+                <section class="department2">
+                    <h3>Industrial Management Department</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för redovisning</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för ekonomi och finans- och bankförvaltning</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för företagsekonomi</h3>
+                </section>
+            </section>
+
+            <section id="law-politicsSV" class="department">
+                <section class="department2">
+                    <h3>Juridiska avdelningen</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för statsvetenskap</h3>
+                </section>
+            </section>
+
+            <section id="engineering-computer-technologySV" class="department">
+                <section class="department2">
+                    <h3>Datatekniska avdelningen</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för elektroteknik</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för medicinsk utrustning och utrustningsteknik</h3>
+                </section>
+            </section>
+
+            <section id="literature-educationSV" class="department">
+                <section class="department2">
+                    <h3>Institutionen för arabiskt språk och litteratur</h3>
+                </section>
+                <section class="department2">
+                    <h3>Engelska avdelningen</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för psykologiska och pedagogiska vetenskaper</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för service och social</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för konst och kritiska studier</h3>
+                </section>
+                <section class="department2">
+                    <h3>Filosofiska institutionen</h3>
+                </section>
+            </section>
+
+            <section id="media-communicationSV" class="department">
+                <section class="department2">
+                    <h3>Press- och kommunikationsavdelning</h3>
+                </section>
+                <section class="department2">
+                    <h3>Institutionen för PR och reklam</h3>
+                </section>
+            </section>
+
+            <section id="medical-sciencesSV" class="department">
+                <section class="department2">
+                    <h3>Folkhälsoavdelningen</h3>
+                </section>
+                <section class="department2">
+                    <h3>Terapeutisk näringsavdelning</h3>
+                </section>
+            </section>
+
+            <section id="arts-languagesSV" class="department">
+                <section class="department2">
+                    <h3>Institutionen för arabiskt språk</h3>
+                </section>
+                <section class="department2">
+                    <h3>Engelska avdelningen</h3>
+                </section>
+                <section class="department2">
+                    <h3>Svenska språkavdelningen</h3>
+                </section>
+            </section>
+
+            <section id="graduate-studies-researchSV" class="department">
+                <section class="department2">
+                    <p>Det finns möjlighet att öppna nya avdelningar efter att ha tecknat avtal med fakultetsmedlemmar.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="contacts">
+            <li><h2>Kontakt</h2></li>
+            <li>Namn</li>
+            <li>Address</li>
+            <li>E-mail</li>
+            <li>Telefonnummer</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+            <li>Bank</li>
+    </footer>
+
 </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

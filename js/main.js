@@ -1,22 +1,15 @@
-const navSlide = () => {
+/***Methods for toggling menu animation***/
+/***Had to make three methods for each language of the website***/
+/***If this problem could be solved it would be great, I didn't know how to***/
+
+const navSlide = () => { 
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', ()=>{
-        //toggle navigation bar
+        //toggle navigation bar & hamburger button
         nav.classList.toggle('nav-active');
-
-        //animate links in nav
-        navLinks.forEach((link) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            }
-            else {
-                link.style.animation = "navLinkFade 0.5s ease forwards 0.5s";
-            } 
-        });
-
         burger.classList.toggle('toggle');
     });
 }
@@ -29,19 +22,8 @@ const navSlide2 = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', ()=>{
-        //toggle navigation bar
+        //toggle navigation bar & hamburger button
         nav.classList.toggle('nav-active');
-
-        //animate links in nav
-        navLinks.forEach((link) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            }
-            else {
-                link.style.animation = "navLinkFade 0.5s ease forwards 0.5s";
-            } 
-        });
-
         burger.classList.toggle('toggle');
     });
 }
@@ -54,25 +36,16 @@ const navSlide3 = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', ()=>{
-        //toggle navigation bar
+        //toggle navigation bar & hamburger button
         nav.classList.toggle('nav-active');
-
-        //animate links in nav
-        navLinks.forEach((link) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            }
-            else {
-                link.style.animation = "navLinkFade 0.5s ease forwards 0.5s";
-            } 
-        });
-
         burger.classList.toggle('toggle');
     });
 }
 
 navSlide3();
 
+/***Gets the current chosen language, which is set in the methods below this one***/
+/***Hides English & Arabic container/grid if Swedish is clicked etc.***/
 function loadLanguage() {
     currentLang = localStorage.getItem('selectedLang');
     if (currentLang == "english") {
@@ -122,6 +95,8 @@ function inSwedish() {
     localStorage.setItem('selectedLang', 'swedish');
 }
 
+
+/***Displays the correct department when clicking on a specific faculty***/
 function showDepartments(id) {
     const allDepartments = document.querySelectorAll(".department");
     const selectedDepartments = document.getElementById(id);
@@ -150,6 +125,7 @@ function showProgramme(id) {
     }
 }
 
+/***Adds active class (lighter bg-color) when clicking on an item in the side menu (Programmes & faculties)***/
 const asideItems = document.querySelectorAll('aside li');
 asideItems.forEach(item => {
     item.addEventListener('click', function() {

@@ -269,7 +269,7 @@ textarea {
   color: #fff;
 }
 
-:root {
+:root { /**main color palette**/
   --blue: #006099;
   --lightblue: #54839e;
   --yellow: #f9cc5b;
@@ -299,14 +299,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
 }
 
-.nested {
+.nested { 
   display: grid;
   grid-gap: 10px;
   min-width: fit-content;
   grid-template-columns: repeat(auto, minmax(20px, 1fr));
 }
 
-.ar, .sv{
+.ar, .sv{ /**for starting on the English page**/
   display: none;
 }
 /*****Language switch********/
@@ -339,16 +339,16 @@ nav {
   align-items: center;
   position: relative;
   /*background-color: var(--blue);*/
-  /*background-color: var(--lightblue);*/
-  background-image: linear-gradient(#006099, #5A7D95, #7894B0, #EDDEA4, #fcdf6f);
+  background-image: linear-gradient(#006099, #5A7D95, #7894B0, #EDDEA4, #fcdf6f); 
 }
 
 nav img {
   width: 150px;
   margin: 3px;
+  padding: 10px;
 }
 
-.nav-links, .nav-links2, .nav-links3 {
+.nav-links, .nav-links2, .nav-links3 { /**I had to make layered navs for each language for the Javascript to work, fix if possible**/
   text-align: right;
   display: inline-block;
   width: 100%;
@@ -749,9 +749,9 @@ aside ul li {
   .nav-links, .nav-links2, .nav-links3 {
     position: absolute;
     background: rgba(84, 131, 158, 0.98);
-    height: 60vh;
+    height: 80vh;
     z-index: -1;
-    top: 12.7vh;
+    top: 10.5vh;
     display: flex;
     opacity: 0;
     flex-direction: column;
